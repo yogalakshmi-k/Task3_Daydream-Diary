@@ -1,0 +1,174 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daydream Diary | The Little Things Club</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="page-decoration deco-one">✿</div>
+    <div class="page-decoration deco-two">♡</div>
+    <div class="page-decoration deco-three">✧</div>
+
+    <div class="app-layout">
+
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-bow">🎀</div>
+                <h1>Daydream<br>Diary</h1>
+                <p>The Little Things Club</p>
+            </div>
+
+            <div class="sidebar-flower">🌷</div>
+
+            <nav class="navigation">
+                <a href="#home" class="nav-link active">⌂ <span>Home</span></a>
+                <a href="#journal" class="nav-link">♡ <span>My Journal</span></a>
+                <a href="#tasks" class="nav-link">☑ <span>My Tasks</span></a>
+                <a href="#memories" class="nav-link">✿ <span>Memories</span></a>
+            </nav>
+
+            <div class="sidebar-note">
+                <span>☁️</span>
+                <p>Take it slow.<br>You're blooming.</p>
+            </div>
+
+            <div class="sidebar-bottom">Made with ♡</div>
+        </aside>
+
+        <main class="main-content" id="home">
+
+            <header class="top-header">
+                <div>
+                    <p class="eyebrow">A LITTLE SPACE JUST FOR YOU ✧</p>
+                    <h2>Hello, Dreamer! <span>♡</span></h2>
+                    <p class="subheading">Let's make today a little more beautiful.</p>
+                </div>
+                <div class="date-sticker">
+                    <span>☀️</span>
+                    <div>
+                        <small>TODAY IS</small>
+                        <strong id="today-date">Today</strong>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content-grid">
+
+                <section class="paper-card journal-card" id="journal">
+                    <div class="card-heading pink-heading">
+                        <span>✎</span>
+                        <h3>My Little Journal</h3>
+                        <span class="heading-heart">♡</span>
+                    </div>
+
+                    <div class="journal-content">
+                        <p class="prompt">Today I'm feeling...</p>
+
+                        <div class="mood-options">
+                            <button class="mood-btn selected" data-mood="Happy">
+                                <span>😊</span><small>Happy</small>
+                            </button>
+                            <button class="mood-btn" data-mood="Calm">
+                                <span>😌</span><small>Calm</small>
+                            </button>
+                            <button class="mood-btn" data-mood="Okay">
+                                <span>🙂</span><small>Okay</small>
+                            </button>
+                            <button class="mood-btn" data-mood="Sad">
+                                <span>🥺</span><small>Sad</small>
+                            </button>
+                            <button class="mood-btn" data-mood="Excited">
+                                <span>🤩</span><small>Excited</small>
+                            </button>
+                        </div>
+
+                        <label for="journal-input" class="prompt">Dear Diary, ♡</label>
+                        <textarea id="journal-input" placeholder="Write your thoughts, little memories and dreams here..."></textarea>
+
+                        <button id="save-entry" class="primary-btn">♡ Save My Entry</button>
+                        <p id="journal-message" class="message"></p>
+                    </div>
+                </section>
+
+                <section class="paper-card tasks-card" id="tasks">
+                    <div class="card-heading green-heading">
+                        <span>☑</span>
+                        <h3>My Little Tasks</h3>
+                        <span class="heading-heart">♡</span>
+                    </div>
+
+                    <div class="task-content">
+                        <form id="task-form">
+                            <input type="text" id="task-input" placeholder="Add a little task..." maxlength="100" autocomplete="off">
+                            <button type="submit" class="add-btn">+ Add</button>
+                        </form>
+
+                        <div class="task-summary">
+                            <span id="task-count">0 little tasks</span>
+                            <span>Keep going! 🌱</span>
+                        </div>
+
+                        <ul id="task-list"></ul>
+
+                        <p id="empty-message">Your little list is waiting! 🌷</p>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="bottom-grid">
+
+                <section class="quote-card" id="memories">
+                    <span class="quote-star">✦</span>
+                    <h3>A Little Reminder</h3>
+                    <p>"Dream it. Plan it.<br>Do it."</p>
+                    <span class="quote-flower">🌼</span>
+                </section>
+
+                <section class="progress-card">
+                    <div class="progress-title">
+                        <span>🌱</span>
+                        <h3>Today's Progress</h3>
+                    </div>
+                    <p id="progress-text">0 of 0 tasks completed</p>
+                    <div class="progress-track">
+                        <div id="progress-fill"></div>
+                    </div>
+                    <p id="progress-message">Every little step counts! ♡</p>
+                </section>
+
+                <section class="encouragement-card">
+                    <span>🦋</span>
+                    <p>You're doing<br>amazing, lovely!</p>
+                    <small>One day at a time ♡</small>
+                </section>
+
+            </div>
+
+            <section class="memories-section">
+                <div class="section-title">
+                    <h3>Little Diary Memories ♡</h3>
+                    <span>All your saved entries</span>
+                </div>
+                <div id="entries-list" class="entries-list">
+                    <p class="empty-entries">Your memories will appear here. 🌸</p>
+                </div>
+            </section>
+
+            <footer>
+                <p>Made with love, dreams & a little bit of magic ✿</p>
+                <span>DAYDREAM DIARY © 2026</span>
+            </footer>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
