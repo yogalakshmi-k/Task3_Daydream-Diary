@@ -1,4 +1,4 @@
-**# ☁️ Daydream Diary — The Little Things Club
+ ☁️ Daydream Diary — The Little Things Club
 
 <p align="center">
   <em>Plan softly. Dream big. 🌷</em>
